@@ -1,0 +1,320 @@
+{
+	"info": {
+		"_postman_id": "a1f00c1c-f79e-4cc4-9f18-1ac80c610d83",
+		"name": "super_market",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "user_register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\":\"nagah\",\r\n     \"last_name\":\"abdelfattah\",\r\n     \"password\":\"123145231\" ,\r\n    \"email\":\"nagahabdela101@gmail.com\",\r\n\"phone\":\"01234567891\"\r\n    \r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}user/register",
+							"host": [
+								"{{URL}}user"
+							],
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user_delete_account",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\":\"nagah\",\r\n     \"last_name\":\"abdelfattah\",\r\n     \"password\":\"123145231\" ,\r\n    \"email\":\"nagahabdela101@gmail.com\",\r\n\"phone\":\"01234567891\"\r\n    \r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}user/delete_account/6439da03f28b10c5624a86d2",
+							"host": [
+								"{{URL}}user"
+							],
+							"path": [
+								"delete_account",
+								"6439da03f28b10c5624a86d2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user_edit_account",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\":\"nagah\",\r\n     \"last_name\":\"abdelfattah\",\r\n     \"password\":\"123145231\" ,\r\n    \"email\":\"nagahabdela101@gmail.com\",\r\n\"phone\":\"01234567891\"\r\n    \r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}user/delete_account/6439da03f28b10c5624a86d",
+							"host": [
+								"{{URL}}user"
+							],
+							"path": [
+								"delete_account",
+								"6439da03f28b10c5624a86d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "all user",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\":\"tiaaa\",\r\n     \"last_name\":\"khaleddd\",\r\n     \"password\":\"123456\" ,\r\n    \"email\":\"tia@mail.com\",\r\n\"phone\":\"01234567891\"\r\n    \r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}user",
+							"host": [
+								"{{URL}}user"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "product",
+			"item": [
+				{
+					"name": "add-product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"product_name\": \"Vitrac Bitter  Orange Jam\",\r\n        \"product_brand\": \"vitrac\",\r\n        \"product_price\": \"32.5 egp\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}product/addproduct",
+							"host": [
+								"{{URL}}product"
+							],
+							"path": [
+								"addproduct"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "all-product",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"product_name\":\"Vitrac Bitter  Orange Jam\",\r\n\"product_brand\":\" Vitrac\"\r\n,\"product_price\":\"32.5 Egp\"\r\n,\"product_size\":\" 430g\",\r\n\"product_image\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}product",
+							"host": [
+								"{{URL}}product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "single-product",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"product_name\":\"Vitrac Bitter  Orange Jam\",\r\n\"product_brand\":\" Vitrac\"\r\n,\"product_price\":\"32.5 Egp\"\r\n,\"product_size\":\" 430g\",\r\n\"product_image\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}product/single/643dc1a0c14681e0a55637e9",
+							"host": [
+								"{{URL}}product"
+							],
+							"path": [
+								"single",
+								"643dc1a0c14681e0a55637e9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-all-product",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"product_name\":\"Vitrac Bitter  Orange Jam\",\r\n\"product_brand\":\" Vitrac\"\r\n,\"product_price\":\"32.5 Egp\"\r\n,\"product_size\":\" 430g\",\r\n\"product_image\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}product/delete",
+							"host": [
+								"{{URL}}product"
+							],
+							"path": [
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-one-product",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"product_name\":\"Vitrac Bitter  Orange Jam\",\r\n\"product_brand\":\" Vitrac\"\r\n,\"product_price\":\"32.5 Egp\"\r\n,\"product_size\":\" 430g\",\r\n\"product_image\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}product/deleteProduct/643dc1a0c14681e0a55637e9",
+							"host": [
+								"{{URL}}product"
+							],
+							"path": [
+								"deleteProduct",
+								"643dc1a0c14681e0a55637e9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit -one-product",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"product_name\":\"Vitrac Bitter  Orange Jam\",\r\n\"product_brand\":\" Vitrac\"\r\n,\"product_price\":\"32.5 Egp\"\r\n,\"product_size\":\" 430g\",\r\n\"product_image\":\"ggggggggggggg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}product/editproduct/643dcfa987ce5bfc6149953b",
+							"host": [
+								"{{URL}}product"
+							],
+							"path": [
+								"editproduct",
+								"643dcfa987ce5bfc6149953b"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "URL",
+			"value": "localhost:3000/api/",
+			"type": "default"
+		}
+	]
+}
